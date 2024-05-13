@@ -17,15 +17,15 @@ const DarkMode = () => {
 
     return (
         <div className='relative flex items-center'>
-            {theme === "light" && (
+            {theme === "dark" && (
                 <MdSunny
-                    onClick={() => setTheme("dark")}
+                    onClick={() => setTheme("light")}
                     className="w-18 cursor-pointer absolute right--1 z-10 transition-all duration-300"
                 />
             )}
-            {theme === "dark" && (
+            {theme === "light" && (
                 <IoIosMoon
-                    onClick={() => setTheme("light")}
+                    onClick={() => setTheme("dark")}
                     className="w-18 cursor-pointer opacity-100 transition-opacity duration-300 absolute right--1"
                 />
             )}
