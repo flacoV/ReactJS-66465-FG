@@ -18,7 +18,7 @@ const dropDownLinks = [
     {
         id: 2,
         icon: <BsFire />,
-        name: 'Best Sellig',
+        name: 'Best Selling',
         link: '/#'
     },
     {
