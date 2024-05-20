@@ -4,6 +4,8 @@ import Image1 from '../assets/hero/greenHs.png'
 import Image2 from '../assets/hero/macbookPro.png'
 import Image3 from '../assets/hero/ps5.png'
 import Image4 from '../assets/hero/rtx4090.png'
+import Button from './shared/Button'
+
 
 const HeroData = [
     {
@@ -56,7 +58,7 @@ const Hero = () => {
       };
 
   return (
-    <div className='container'>
+    <div className='container pt-8'>
         <div className='overflow-hidden rounded-3xl min-h-[550px] 
         sm:min-h-[650px] hero-bg-color flex justify-center items-center'>
             {/* Hero Section */}
@@ -72,10 +74,13 @@ const Hero = () => {
                         relative z-10 '>
                             <h1 className='text-2xl sm:text-6xl lg:text-2xl font-bold'>{data.subtitle}</h1>
                             <h2 className='text-5xl sm:text-6xl lg:text-7xl font-bold'>{data.title}</h2>
-                            <h2 className='text-5xl uppercase text-white dark:text-white/5 
+                            <h2 className='text-5xl uppercase text-white dark:text-white/5
                             sm:text-[80px] md;text-[100px] xl:text-[150px] font-bold'>{data.title2}</h2>
                             <div>
-                                <button>Shop Now</button>
+                                <Button text='Shop Now' 
+                                bgColor='bg-primary' 
+                                textcolor='text-white' 
+                                />
                             </div>
                         </div>
                      {/* Img section */}
