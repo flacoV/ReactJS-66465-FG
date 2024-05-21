@@ -1,11 +1,12 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { MdSunny } from "react-icons/md";
 import { IoIosMoon } from "react-icons/io";
 
 const DarkMode = () => {
     const [theme, setTheme] = React.useState(localStorage.getItem("theme") || "light");
 
-    React.useEffect(() => {
+    useEffect(() => {
         localStorage.setItem("theme", theme);
         const element = document.documentElement;
         if (theme === "dark") {

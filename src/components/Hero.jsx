@@ -2,9 +2,11 @@ import React from 'react'
 import Slider from 'react-slick'
 import Image1 from '../assets/hero/greenHs.png'
 import Image2 from '../assets/hero/macbookPro.png'
-import Image3 from '../assets/hero/ps5.png'
+import Image3 from '../assets/hero/ps5sm.png'
 import Image4 from '../assets/hero/rtx4090.png'
 import Button from './shared/Button'
+import { FaApple } from "react-icons/fa";
+
 
 
 const HeroData = [
@@ -19,6 +21,7 @@ const HeroData = [
     {
         id: 2,
         img: Image2,
+        icon: <FaApple />,
         subtitle: 'Apple',
         title: 'Macbook Pro',
         title2: 'M2 Chip',
@@ -29,7 +32,7 @@ const HeroData = [
         img: Image3,
         subtitle: 'Sony',
         title: 'Play Station 5',
-        title2: '1TB Version',
+        title2: 'SpiderMan',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
     },
     {
@@ -58,7 +61,7 @@ const Hero = () => {
       };
 
   return (
-    <div className='container pt-8'>
+    <div className='container pt-8 dark:bg-gray-900'>
         <div className='overflow-hidden rounded-3xl min-h-[550px] 
         sm:min-h-[650px] hero-bg-color flex justify-center items-center'>
             {/* Hero Section */}
