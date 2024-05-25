@@ -33,11 +33,13 @@ const Navbar = () => {
     return (
         <div className='bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40'>
             <div className='py-4'>
+                {/* Contenido del navbar*/}
                 <div className="container flex justify-between items-center">
                     <div className='flex items-center gap-4'>
                         <a href="#" className='text-primary font-semibold tracking-widest text-2xl uppercase sm:text-3xl'>
                             Tech Store
                         </a>
+                        {/* Links */}
                         <div className='hidden lg:block'>
                             <ul className='flex items-center gap-4 '>
                                 <li><a href="" className='inline-block px-4 font-semibold text-gray-400 hover:text-black dark:hover:text-white duration-200'>Home</a></li>
@@ -70,6 +72,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                     </div>
+                    {/* Botones */}
                     <div className='flex justify-between items-center gap-4'>
                         <div className='relative group hidden sm:block'>
                             <input type="text" placeholder='Search a product' className='search-bar' />

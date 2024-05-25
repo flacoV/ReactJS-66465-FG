@@ -62,16 +62,20 @@ const Hero = () => {
 
   return (
     <div className='container pt-8 dark:bg-gray-900'>
+        <div className='flex flex-col justify-center items-center p-10'> 
+            <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Buy quicker,</span> buy smarter.</h1>
+            <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Tech Store were gaming comes true.</p>
+        </div>
         <div className='overflow-hidden rounded-3xl min-h-[550px] 
         sm:min-h-[650px] hero-bg-color flex justify-center items-center'>
-            {/* Hero Section */}
+            {/* Seccion del Hero */}
         <div className='container pb-8 sm:pb-0'>
         <Slider { ...settings}>
             {
              HeroData.map((data) => (
                 <div key={data.id}>
                     <div className='grid grid-cols-1 sm:grid-cols-2'>
-                     {/* Text content section */}
+                     {/* Seccion del contenido */}
                         <div className='flex flex-col justify-center gap-4 sm:pl-3 pt-12 sm:pt-0 
                         text-center sm:text-left order-2 sm:order-1
                         relative z-10 '>
@@ -86,7 +90,7 @@ const Hero = () => {
                                 />
                             </div>
                         </div>
-                     {/* Img section */}
+                     {/* Seccion de la imagen */}
                      <div className='order-1 sm:order-2'>
                         <div>
                             <img src={data.img} alt="" className='w-[300px] h-[300px] sm:h-[450px] sm:scale-105 lg:scale-110 
