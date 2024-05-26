@@ -3,17 +3,174 @@
     "Products": [
         {
             "id": 1,
-            "name": "Name",
+            "name": "Auriculares Logitech",
             "price": 100,
             "stock": 1,
-            "image": ""
+            "image": "",
+            "category:": "Headphones",
+            "marca": "Logitech"
         },
         {
             "id": 2,
-            "name": "Name",
+            "name": "Teclado Logitech",
             "price": 100,
             "stock": 1,
-            "image": ""
+            "image": "",
+            "category:": "Keyboards",
+            "marca": "Logitech"
+        },
+        {
+            "id": 3,
+            "name": "PlayStation 5",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Consoles",
+            "marca": "Sony"
+        },
+        {
+            "id": 4,
+            "name": "Apple Watch",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Watches",
+            "marca": "Apple"
+        },
+        {
+            "id": 5,
+            "name": "Samsung Watch 5",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Watches",
+            "marca": "Samsung"
+        },
+        {
+            "id": 6,
+            "name": "Macbook Pro M2",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Notebooks",
+            "marca": "Apple"
+        },
+        {
+            "id": 7,
+            "name": "Notebook Gamer Acer Nitro 5",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Notebooks",
+            "marca": "Acer"
+        },
+        {
+            "id": 8,
+            "name": "Xbox One",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Consoles",
+            "marca": "Xbox"
+        },
+        {
+            "id": 9,
+            "name": "Hyperx Cloud Flight",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Headphones",
+            "marca": "Hyperx"
+        },
+        {
+            "id": 10,
+            "name": "Razer Huntsman Mini",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Keyboards",
+            "marca": "Razer"
+        },
+        {
+            "id": 11,
+            "name": "Monitor 144hz ZOWI",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Monitors",
+            "marca": "ZOWI"
+        },
+        {
+            "id": 12,
+            "name": "Monitor 144hz Curved",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Monitors",
+            "marca": "Samsung"
+        },
+        {
+            "id": 13,
+            "name": "NVIDIA RTX 4090",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Graphic Cards",
+            "marca": "NVIDIA"
+        },
+        {
+            "id": 14,
+            "name": "NVIDIA RTX 4080",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Graphic Cards",
+            "marca": "NVIDIA"
+        },
+        {
+            "id": 15,
+            "name": "AMD Radeon RX7000",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Graphic Cards",
+            "marca": "AMD"
+        },
+        {
+            "id": 16,
+            "name": "MSI G2412V 100hz",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Monitors",
+            "marca": "MSI"
+        },
+        {
+            "id": 17,
+            "name": "PS5 Controller",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Consoles",
+            "marca": "Sony"
+        },
+        {
+            "id": 18,
+            "name": "Xbox ONE Controller",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Consoles",
+            "marca": "Xbox"
+        },
+        {
+            "id": 19,
+            "name": "Xbox ONE Controller",
+            "price": 100,
+            "stock": 1,
+            "image": "",
+            "category:": "Consoles",
+            "marca": "Xbox"
         }
     ]
 }

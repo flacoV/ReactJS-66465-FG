@@ -57,7 +57,7 @@ const Navbar = () => {
                                         <ul className='space-y-2'>
                                             {
                                                 dropDownLinks.map((data, index) => (
-                                                    <li className=' flex items-center text-gray-400 hover:text-black dark:hover:text-white dark:hover:bg-brWhite/20 duration-200 hover:bg-primary/20 rounded-md p-1'>
+                                                    <li className=' flex items-center text-gray-400 hover:text-black dark:hover:text-white dark:hover:bg-secondary/20 duration-200 hover:bg-primary/20 rounded-md p-1'>
                                                             {data.icon}
                                                         <a className='text-gray-400 hover:text-black rounded-md dark:hover:text-white duration-200 inline-block w-full p-2 font-semibold'
                                                         href={data.link}>
