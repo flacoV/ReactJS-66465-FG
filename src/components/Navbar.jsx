@@ -36,7 +36,7 @@ const Navbar = () => {
                 {/* Contenido del navbar*/}
                 <div className="container flex justify-between items-center">
                     <div className='flex items-center gap-4'>
-                        <a href="#" className='text-primary font-semibold tracking-widest text-2xl uppercase sm:text-3xl'>
+                        <a href="#" className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 font-semibold tracking-widest text-2xl uppercase sm:text-3xl'>
                             Tech Store
                         </a>
                         {/* Links */}
