@@ -7,7 +7,7 @@ import Services from './components/Services'
 import Banner from './components/Banner'
 import Iphone15 from './assets/banner/iphone15.png'
 import ItemListContainer from './components/ItemListContainer'
-import { BrowserRouter, Router, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 
 const BannerData = {
