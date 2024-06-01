@@ -6,6 +6,9 @@ import Category from './components/Category'
 import Services from './components/Services'
 import Banner from './components/Banner'
 import Iphone15 from './assets/banner/iphone15.png'
+import ItemListContainer from './components/ItemListContainer'
+import { BrowserRouter, Router, Routes } from 'react-router-dom'
+
 
 const BannerData = {
   discount: '40% OFF',
@@ -22,11 +25,20 @@ const App = () => {
   return (
     <div className=' bg-white dark:bg-gray-900 
     dark:text-white duration-200'>
-      <Navbar />
-      <Hero />
-      <Category />
-      <Services />
-      <Banner data={BannerData}/>
+      <BrowserRouter>
+        <Navbar />\
+
+          <Routes>
+            <Route path="/" />
+          </Routes>
+
+
+        <Hero />
+        <Category />
+        <Services />
+        <Banner data={BannerData}/>
+        <ItemListContainer />
+      </BrowserRouter>  
     </div>
   )
 }
