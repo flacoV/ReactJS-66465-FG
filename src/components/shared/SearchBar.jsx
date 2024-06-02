@@ -1,12 +1,8 @@
 import React from 'react';
 
-const SearchBar = ({ searchTerm, setSearchTerm, category, setCategory, categories, handleSearch }) => {
+const SearchBar = ({ searchTerm, setSearchTerm, handleSearch }) => {
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
-  };
-
-  const handleCategoryChange = (event) => {
-    setCategory(event.target.value);
   };
 
   const handleSearchSubmit = (event) => {
@@ -27,18 +23,6 @@ const SearchBar = ({ searchTerm, setSearchTerm, category, setCategory, categorie
             value={searchTerm}
             onChange={handleSearchChange}
           />
-        </div>
-        <div className="flex bg-gray-100 p-4 w-72 space-x-4 rounded-lg">
-          <select
-            className="bg-gray-100 outline-none text-gray-500"
-            value={category}
-            onChange={handleCategoryChange}
-          >
-            <option value="">All categories</option>
-            {categories.map((cat) => (
-              <option key={cat} value={cat}>{cat}</option>
-            ))}
-          </select>
         </div>
         <div className="bg-gray-800 py-3 px-5 text-white dark:bg-gray-500 font-semibold rounded-lg hover:shadow-lg transition duration-3000 cursor-pointer">
           <button type="submit">Search</button>
