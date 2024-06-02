@@ -36,7 +36,7 @@ const App = () => {
               <Banner data={BannerData}/>
             </>
           }/>
-          <Route path='/shop' element={<Shop />}/>
+          <Route path='/shop' className='dark:bg-gray-900' element={<Shop />}/>
         </Routes>
       </BrowserRouter>
     </div>
