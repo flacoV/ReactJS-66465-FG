@@ -42,8 +42,8 @@ const Navbar = () => {
                         {/* Links */}
                         <div className='hidden lg:block'>
                             <ul className='flex items-center gap-4 '>
-                                <li><a href="" className='inline-block px-4 font-semibold text-gray-400 hover:text-black dark:hover:text-white duration-200'>Home</a></li>
-                                <li><a href="" className='inline-block px-4 font-semibold text-gray-400 hover:text-black dark:hover:text-white duration-200'>Shop</a></li>
+                                <li><a href="/" className='inline-block px-4 font-semibold text-gray-400 hover:text-black dark:hover:text-white duration-200'>Home</a></li>
+                                <li><a href="/shop" className='inline-block px-4 font-semibold text-gray-400 hover:text-black dark:hover:text-white duration-200'>Shop</a></li>
                                 <li><a href="" className='inline-block px-4 font-semibold text-gray-400 hover:text-black dark:hover:text-white duration-200'>About</a></li>
                                 <li><a href="" className='inline-block px-4 font-semibold text-gray-400 hover:text-black dark:hover:text-white duration-200'>Blog</a></li>
                                 <li className='relative cursor-pointer group'>

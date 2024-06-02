@@ -7,7 +7,7 @@ const Banner = ({ data }) => {
             <div style={{ backgroundColor: data.bgColor }} className='grid grid-cols-1 md:grid-cols-3 gap-6 items-center text-white rounded-3xl'>
             {/* primera columna */}
             <div className='p-6 sm:p-8'>
-                <p className='text-sm'>{data.discount}</p>
+                <p className='text-sm font-bold'>{data.discount}</p>
                 <h1 className='uppercase text-4xl lg:text-7xl font-bold'>
                 {' '}
                 {data.title}

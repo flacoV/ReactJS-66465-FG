@@ -1,9 +1,9 @@
-import data from '../../database/data.json'
+import data from '../../database/products.json'
 
 export const getData = () => {
     return new Promise((resolve, reject) => {
         setTimeout( () => {
-            resolve(data)
-        }, 500)
+            resolve(data.products)
+        }, 2000)
     })
 }

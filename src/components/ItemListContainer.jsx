@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { getData } from './helpers/getData'
+import Shop from './Shop';
 
 
 const ItemListContainer = () => {
   
   const [products, setProducts] = useState([]);
-  console.log(products);
 
   useEffect(() => {
         getData()
@@ -15,7 +15,9 @@ const ItemListContainer = () => {
   }, [])
 
     return (
-    <div>ItemListContainer</div>
+    <div>
+      <Shop products={products} />
+    </div>
   )
 }
 
