@@ -9,8 +9,8 @@ const Shop = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
-  const [category, setCategory] = useState('');
-  const [categories, setCategories] = useState([]);
+  const [brand, setBrand] = useState('');
+  const [brands, setBrands] = useState([]);
 
   useEffect(() => {
     getData()
@@ -18,8 +18,8 @@ const Shop = () => {
         setProducts(data);
         setFilteredProducts(data);
         setLoading(false);
-        const uniqueCategories = [...new Set(data.map(product => product.category))];
-        setCategories(uniqueCategories);
+        const uniqueBrands = [...new Set(data.map(product => product.brand))];
+        setBrands(uniqueBrands);
       })
       .catch(error => {
         console.error("Error fetching products: ", error);
@@ -29,22 +29,24 @@ const Shop = () => {
   }, []);
 
   useEffect(() => {
-    // Filtrar productos cuando cambien searchTerm o category
     const filtered = products.filter(product =>
       product.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
-      (!category || product.category === category)
+      (!brand || product.brand === brand)
     );
     setFilteredProducts(filtered);
-  }, [searchTerm, category, products]);
+  }, [searchTerm, brand, products]);
 
   const handleSearch = () => {
-    // Realizar el filtrado de productos aquí
     const filtered = products.filter(product =>
       product.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
-      (!category || product.category === category)
+      (!brand || product.brand === brand)
     );
     setFilteredProducts(filtered);
   };
+
+  const handleBrandClick = (brand) => {
+    setBrand(brand);
+  }
 
   return (
     <div className='pt-8 dark:bg-gray-900'>
@@ -57,10 +59,10 @@ const Shop = () => {
           <SearchBar
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
-            category={category}
-            setCategory={setCategory}
-            categories={categories}
             handleSearch={handleSearch}
+            brands={brands}
+            brand={brand}
+            setBrand={setBrand}
           />
         </div>
         <div className='container products flex justify-center items-center flex-wrap gap-9'>
@@ -70,7 +72,7 @@ const Shop = () => {
                 <div className="card bg-white rounded-xl shadow-lg hover:shadow-xl dark:bg-gray-800">
                   <div className="card-border-top"></div>
                   <div className="img">
-                    <img src="" alt="" />
+                    <img src={product.image} alt={product.name} />
                   </div>
                   <span className='text-gray-900 dark:text-white'>{product.name}</span>
                   <p className="job text-gray-500">{product.brand}</p>
@@ -78,7 +80,7 @@ const Shop = () => {
                 </div>
               </div>
             ))
-            )}
+          )}
         </div>
       </div>
     </div>
