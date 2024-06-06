@@ -20,7 +20,7 @@ const ServiceData = [
         id: 3,
         icon: <RiSecurePaymentFill className='text-4xl md:text-5xl' />,
         title: 'Secure Payment',
-        description: 'All payment methods with me highest secure system'
+        description: 'All payment methods with the highest secure system'
     },
     {
         id: 4,

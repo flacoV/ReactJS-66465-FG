@@ -9,6 +9,7 @@ import Iphone15 from './assets/banner/iphone15.png'
 import ItemListContainer from './components/ItemListContainer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Shop from './components/Shop'
+import ItemDetails from './components/ItemDetails'
 
 const BannerData = {
   discount: '40% OFF',
@@ -37,8 +38,10 @@ const App = () => {
             </>
           }/>
           <Route path='/shop' className='dark:bg-gray-900' element={<Shop />} />
-          <Route path='/shop/brand/:brand' element={<Shop />} />
-        </Routes>
+          <Route path='/shop/brand/:brand' element={<Shop />} />        
+          <Route path='/product/:name' element={<ItemDetails />} />
+          </Routes>
+        <ItemDetails />
       </BrowserRouter>
     </div>
   )
