@@ -39,7 +39,7 @@ const App = () => {
           }/>
           <Route path='/shop' className='dark:bg-gray-900' element={<Shop />} />
           <Route path='/shop/brand/:brand' element={<Shop />} />        
-          <Route path='/product/:name' element={<ItemDetails />} />
+          <Route path='/shop/product/:id' element={<ItemDetails />} />
           </Routes>
         <ItemDetails />
       </BrowserRouter>

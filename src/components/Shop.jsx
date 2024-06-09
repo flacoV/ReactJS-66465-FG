@@ -81,11 +81,11 @@ const Shop = () => {
                   <p className="job text-gray-500">{product.brand}</p>
                   <div className='w-400 flex justify-center p-2'>
                   <Link
-                  to={`/product/{product.name}`}
-                  className='inline-block rounded-3xl px-6 pb-2 pt-2.5 text-xs font-medium 
+                  to={`/shop/product/${product.id}`}
+                  className='inline-block rounded-xl px-6 pb-2 pt-2.5 text-xs font-medium 
                   uppercase leading-normal
                 text-white shadow-primary-3 transition 
-                  duration-150 ease-in-out'
+                  duration-150 ease-in-out bg-gradient-to-r to-emerald-600 from-sky-400'
                   >
                   Details
                   </Link>
