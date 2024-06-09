@@ -4,8 +4,8 @@
         {
             "id": 1,
             "name": "Logitech G335",
-            "price": 100,
-            "stock": 1,
+            "price": 79.99,
+            "stock": 50,
             "image": "../assets/products/product1.png",
             "category": "Headphones",
             "brand": "Logitech",
@@ -13,10 +13,10 @@
         },
         {
             "id": 2,
-            "name": "Teclado Logitech",
-            "price": 100,
+            "name": "Logitech G512",
+            "price": 129.99,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product2.png",
             "category": "Keyboards",
             "brand": "Logitech",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
@@ -26,7 +26,7 @@
             "name": "PlayStation 5",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/hero/ps5.png",
             "category": "Consoles",
             "brand": "Sony",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
@@ -36,7 +36,7 @@
             "name": "Apple Watch",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product4.png",
             "category": "Watches",
             "brand": "Apple",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
@@ -46,7 +46,7 @@
             "name": "Samsung Watch 5",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product5.png",
             "category": "Watches",
             "brand": "Samsung",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
@@ -56,7 +56,7 @@
             "name": "Macbook Pro M2",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product6.png",
             "category": "Notebooks",
             "brand": "Apple",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
@@ -66,7 +66,7 @@
             "name": "Notebook Acer Nitro 5",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product7.png",
             "category": "Notebooks",
             "brand": "Acer",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
@@ -76,17 +76,17 @@
             "name": "Xbox One",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product8.png",
             "category": "Consoles",
             "brand": "Xbox",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 9,
-            "name": "Hyperx Cloud Flight",
+            "name": "HyperX Cloud Flight",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product9.png",
             "category": "Headphones",
             "brand": "Hyperx",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
@@ -96,7 +96,7 @@
             "name": "Razer Huntsman Mini",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product10.png",
             "category": "Keyboards",
             "brand": "Razer",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
@@ -106,7 +106,7 @@
             "name": "Monitor 144hz ZOWI",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product11.png",
             "category": "Monitors",
             "brand": "ZOWI",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
@@ -116,7 +116,7 @@
             "name": "Monitor 144hz Curved",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product12.png",
             "category": "Monitors",
             "brand": "Samsung",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
@@ -126,7 +126,7 @@
             "name": "NVIDIA RTX 4090",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/hero/rtx4090.png",
             "category": "Graphic Cards",
             "brand": "NVIDIA",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
@@ -136,7 +136,7 @@
             "name": "NVIDIA RTX 4080",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product14.png",
             "category": "Graphic Cards",
             "brand": "NVIDIA",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
@@ -146,7 +146,7 @@
             "name": "AMD Radeon RX7000",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product15.png",
             "category": "Graphic Cards",
             "brand": "AMD",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
@@ -156,7 +156,7 @@
             "name": "MSI G2412V 100hz",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product16.png",
             "category": "Monitors",
             "brand": "MSI",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
@@ -166,7 +166,7 @@
             "name": "PS5 Controller",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product17.png",
             "category": "Consoles",
             "brand": "Sony",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
@@ -176,19 +176,19 @@
             "name": "Xbox ONE Controller",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product18.png",
             "category": "Consoles",
             "brand": "Xbox",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 19,
-            "name": "Xbox ONE Controller",
+            "name": "Samsung S24 Ultra",
             "price": 100,
             "stock": 1,
-            "image": "",
-            "category": "Consoles",
-            "brand": "Xbox",
+            "image": "../assets/products/product19.png",
+            "category": "Cellphones",
+            "brand": "Samsung",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
@@ -196,7 +196,7 @@
             "name": "Iphone 15",
             "price": 100,
             "stock": 1,
-            "image": "",
+            "image": "../assets/products/product20.png",
             "category:": "Cellphones",
             "brand": "Apple",
             "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."

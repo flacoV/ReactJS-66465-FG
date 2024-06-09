@@ -8,7 +8,6 @@ const ItemDetails = () => {
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  
 
   useEffect(() => {
     getData()
@@ -16,7 +15,7 @@ const ItemDetails = () => {
         const foundProduct = data.find(product => product.id === parseInt(id));
         if (foundProduct) {
           setProduct(foundProduct);
-          setError(null); // Clear error state if product found
+          setError(null); 
         } else {
           setError('Product not found');
         }

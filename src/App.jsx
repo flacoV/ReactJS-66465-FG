@@ -10,6 +10,8 @@ import ItemListContainer from './components/ItemListContainer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Shop from './components/Shop'
 import ItemDetails from './components/ItemDetails'
+import Cart from './components/cart/Cart'
+import CartItems from './components/cart/CartItem'
 
 const BannerData = {
   discount: '40% OFF',
