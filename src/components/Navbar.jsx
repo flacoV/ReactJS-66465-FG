@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { IoMdSearch } from "react-icons/io"
 import { FaCartShopping } from "react-icons/fa6"
 import { IoIosArrowDropdownCircle } from "react-icons/io";
@@ -6,6 +6,7 @@ import { HiTrendingUp } from "react-icons/hi";
 import { BsFire } from "react-icons/bs";
 import { IoStar } from "react-icons/io5";
 import DarkMode from './DarkMode'
+import Cart from './cart/Cart';
 
 
 const dropDownLinks = [
@@ -29,7 +30,12 @@ const dropDownLinks = [
     },
 ]
 
-const Navbar = () => {
+const Navbar = ({ openCart, cartItemsLength }) => {
+
+    const handleOpenCart = () => {
+        openCart()
+    }
+
     return (
         <div className='bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40'>
             <div className='py-4'>
@@ -78,12 +84,12 @@ const Navbar = () => {
                             <input type="text" placeholder='Search a product' className='search-bar' />
                             <IoMdSearch className='text-xl text-gray-600 group-hover:text-primary dark:text-gray-400 absolute top-1/2 -translate-y-1/2 right-3 duration-200' />
                         </div>
-                        <button className='relative p-3'>
+                        <button onClick={handleOpenCart} className='relative p-3'>
                             <FaCartShopping className='text-xl text-grey-600 dark:text-grey-400' />
-                            <div className='w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs'>
-                                3
-                            </div>
                         </button>
+                        {cartItemsLength > 0 && 
+                            <span className='w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs'>{cartItemsLength}</span>
+                        }
                         <div>
                             <DarkMode />
                         </div>

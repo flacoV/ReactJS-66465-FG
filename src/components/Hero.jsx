@@ -1,9 +1,9 @@
 import React from 'react'
 import Slider from 'react-slick'
-import Image1 from '../assets/hero/greenHs.png'
-import Image2 from '../assets/hero/macbookPro.png'
-import Image3 from '../assets/hero/ps5sm.png'
-import Image4 from '../assets/hero/rtx4090.png'
+import Image1 from '../../public/assets/hero/greenHs.png'
+import Image2 from '../../public/assets/hero/macbookPro.png'
+import Image3 from '../../public/assets/hero/ps5sm.png'
+import Image4 from '../../public/assets/hero/rtx4090.png'
 import Button from './shared/Button'
 import { FaApple } from "react-icons/fa";
 

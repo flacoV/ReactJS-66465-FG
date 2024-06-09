@@ -3,12 +3,13 @@
     "products": [
         {
             "id": 1,
-            "name": "Auriculares Logitech",
+            "name": "Logitech G335",
             "price": 100,
             "stock": 1,
-            "image": "",
-            "category:": "Headphones",
-            "brand": "Logitech"
+            "image": "../assets/products/product1.png",
+            "category": "Headphones",
+            "brand": "Logitech",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 2,
@@ -16,8 +17,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Keyboards",
-            "brand": "Logitech"
+            "category": "Keyboards",
+            "brand": "Logitech",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 3,
@@ -25,8 +27,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Consoles",
-            "brand": "Sony"
+            "category": "Consoles",
+            "brand": "Sony",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 4,
@@ -34,8 +37,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Watches",
-            "brand": "Apple"
+            "category": "Watches",
+            "brand": "Apple",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 5,
@@ -43,8 +47,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Watches",
-            "brand": "Samsung"
+            "category": "Watches",
+            "brand": "Samsung",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 6,
@@ -52,8 +57,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Notebooks",
-            "brand": "Apple"
+            "category": "Notebooks",
+            "brand": "Apple",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 7,
@@ -61,8 +67,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Notebooks",
-            "brand": "Acer"
+            "category": "Notebooks",
+            "brand": "Acer",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 8,
@@ -70,8 +77,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Consoles",
-            "brand": "Xbox"
+            "category": "Consoles",
+            "brand": "Xbox",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 9,
@@ -79,8 +87,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Headphones",
-            "brand": "Hyperx"
+            "category": "Headphones",
+            "brand": "Hyperx",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 10,
@@ -88,8 +97,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Keyboards",
-            "brand": "Razer"
+            "category": "Keyboards",
+            "brand": "Razer",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 11,
@@ -97,8 +107,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Monitors",
-            "brand": "ZOWI"
+            "category": "Monitors",
+            "brand": "ZOWI",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 12,
@@ -106,8 +117,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Monitors",
-            "brand": "Samsung"
+            "category": "Monitors",
+            "brand": "Samsung",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 13,
@@ -115,8 +127,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Graphic Cards",
-            "brand": "NVIDIA"
+            "category": "Graphic Cards",
+            "brand": "NVIDIA",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 14,
@@ -124,8 +137,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Graphic Cards",
-            "brand": "NVIDIA"
+            "category": "Graphic Cards",
+            "brand": "NVIDIA",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 15,
@@ -133,8 +147,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Graphic Cards",
-            "brand": "AMD"
+            "category": "Graphic Cards",
+            "brand": "AMD",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 16,
@@ -142,8 +157,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Monitors",
-            "brand": "MSI"
+            "category": "Monitors",
+            "brand": "MSI",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 17,
@@ -151,8 +167,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Consoles",
-            "brand": "Sony"
+            "category": "Consoles",
+            "brand": "Sony",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 18,
@@ -160,8 +177,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Consoles",
-            "brand": "Xbox"
+            "category": "Consoles",
+            "brand": "Xbox",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 19,
@@ -169,8 +187,9 @@
             "price": 100,
             "stock": 1,
             "image": "",
-            "category:": "Consoles",
-            "brand": "Xbox"
+            "category": "Consoles",
+            "brand": "Xbox",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         },
         {
             "id": 20,
@@ -179,7 +198,8 @@
             "stock": 1,
             "image": "",
             "category:": "Cellphones",
-            "brand": "Apple"
+            "brand": "Apple",
+            "description": "lorempimpusn dorem, impusn lkorem sokofeo, wofjneoepoi."
         }
     ]
 }

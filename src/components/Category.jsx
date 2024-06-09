@@ -1,8 +1,8 @@
 import React from 'react'
 import Button from './shared/Button'
-import Image1C from '../assets/category/pinkLogitech.png'
-import Image2C from '../assets/category/rtx490.png'
-import Image3C from '../assets/category/macbook.png'
+import Image1C from '../../public/assets/category/pinkLogitech.png'
+import Image2C from '../../public/assets/category/rtx490.png'
+import Image3C from '../../public/assets/category/macbook.png'
 
 const Category = () => {
   return (

@@ -8,11 +8,12 @@ import { Link } from 'react-router-dom';
 const Shop = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
-  const [loading, setLoading] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [brand, setBrand] = useState('');
   const [brands, setBrands] = useState([]);
+  
 
   useEffect(() => {
     getData()

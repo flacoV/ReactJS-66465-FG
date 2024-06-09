@@ -5,9 +5,10 @@ import Loader from './shared/Loader';
 
 const ItemDetails = () => {
   const { id } = useParams(); // Obtén el ID del producto desde la URL
-  const [product, setProduct] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  
 
   useEffect(() => {
     getData()
@@ -23,23 +24,32 @@ const ItemDetails = () => {
       })
       .catch(error => {
         console.log('Error fetching product:', error);
-        setError(error);
+        setError('Error loading product details.');
         setLoading(false);
       });
   }, [id]);
 
   return (
     <div className='pt-8 dark:bg-gray-900'>
-      <div className='container'>
+      <div className='container flex justify-center '>
         <div>
-          {loading ? (<Loader />) : error ? (
-            <div>Error loading product details</div>
+          {loading ? (
+            <Loader />
+          ) : error ? (
+            console.log('error')
           ) : product ? (
-            <div key={product.id}>
-              <h1>{product.name}</h1>
-              
+            <div className='min-h-[450px] 
+            sm:min-h-[550px] min-w-[550px] sm:min-w-[650px] ' key={product.id}>
+              <div className='bg-secondary'>
+                <h1>{product.name}</h1>
+                <p>Description: {product.description}</p>
+                <p>Category: {product.category}</p>
             </div>
-          ) : (null)}
+            <div>
+              <img src={product.image} alt={product.name} />
+            </div>
+            </div>
+          ) : null}
         </div>
       </div>
     </div>
