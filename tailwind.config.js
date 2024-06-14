@@ -6,7 +6,10 @@ export default {
   ],
   darkMode: 'class',
   theme: {
-    extend: {
+    extend: {      
+      userSelect: {
+      none: 'none',
+    },
       colors:{
         primary: "#059669",
         secondary: "#38bdf8",
@@ -17,6 +20,7 @@ export default {
         lightPink: "#cb9e9f",
         lightPalette1: "#845152",
         darkGreen: "#064e38",
+        verified: "#42A5F5"
       },
       container:{
         center: true,

@@ -12,6 +12,7 @@ import Shop from './components/Shop'
 import ItemDetails from './components/ItemDetails'
 import Cart from './components/cart/Cart'
 import CartItems from './components/cart/CartItem'
+import UsersFeedback from './components/UsersFeedback'
 
 const BannerData = {
   discount: '40% OFF',
@@ -43,6 +44,7 @@ const App = () => {
           <Route path='/shop/brand/:brand' element={<Shop />} />        
           <Route path='/shop/product/:id' element={<ItemDetails />} />
           </Routes>
+          <UsersFeedback />
         <ItemDetails />
       </BrowserRouter>
     </div>
