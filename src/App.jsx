@@ -15,7 +15,8 @@ import CartItems from './components/cart/CartItem'
 import UsersFeedback from './components/UsersFeedback'
 import Watch5 from '../public/assets/products/product5.png'
 import News from './components/News'
-
+import Partners from './components/Partners'
+import Footer from './components/Footer'
 const BannerData = {
   discount: '40% OFF',
   title: 'Looking Good',
@@ -54,6 +55,7 @@ const App = () => {
               <UsersFeedback />
               <Banner data={BannerData2} />
               <News />
+              <Partners />
             </>
           }/>
           <Route path='/shop' className='dark:bg-gray-900' element={<Shop />} />
@@ -61,6 +63,7 @@ const App = () => {
           <Route path='/shop/product/:id' element={<ItemDetails />} />
           </Routes>
         <ItemDetails />
+        <Footer />
       </BrowserRouter>
     </div>
   )
