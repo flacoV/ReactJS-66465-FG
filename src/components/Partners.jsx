@@ -7,7 +7,7 @@ import brand5 from '../../public/assets/partners/logitech.png'
 
 const Partners = () => {
   return (
-    <div className='py-8 mt-24 hidden md:block bg-gray-200 dark:bg-white/10 '>
+    <div data-aos='fade-left-in' data-aos-duration='400' className='py-8 mt-24 hidden md:block bg-gray-200 dark:bg-white/10 '>
         <div className='container '>
             <div className="grid grid-cols-5 gap-3 place-items-center opacity-50">
                 <img src={brand1} alt="" className='w-[90px] dark:invert' />

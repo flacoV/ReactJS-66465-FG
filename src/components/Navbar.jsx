@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { IoMdSearch } from "react-icons/io"
 import { FaCartShopping } from "react-icons/fa6"
 import { IoIosArrowDropdownCircle } from "react-icons/io";
+import { FaUserCircle } from "react-icons/fa";
 import { HiTrendingUp } from "react-icons/hi";
 import { BsFire } from "react-icons/bs";
 import { IoStar } from "react-icons/io5";
@@ -81,8 +82,7 @@ const Navbar = ({ openCart, cartItemsLength }) => {
                     {/* Botones */}
                     <div className='flex justify-between items-center gap-4'>
                         <div className='relative group hidden sm:block'>
-                            <input type="text" placeholder='Search a product' className='search-bar' />
-                            <IoMdSearch className='text-xl text-gray-600 group-hover:text-primary dark:text-gray-400 absolute top-1/2 -translate-y-1/2 right-3 duration-200' />
+                        <FaUserCircle className='cursor-pointer' />
                         </div>
                         <button onClick={handleOpenCart} className='relative p-3'>
                             <FaCartShopping className='text-xl text-grey-600 dark:text-grey-400' />

@@ -36,9 +36,9 @@ const Services = () => {
         <div className='container mt-14 md:mt-20 select-none'>
             <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 gap-y-8'>
                 {ServiceData.map((data) => (
-                    <div key={data.id} className='flex items-center flex-col gap-4 text-center'> 
+                    <div data-aos='fade-down' key={data.id} className='flex items-center flex-col gap-4 text-center'> 
                         {data.icon}
-                        <div>
+                        <div data-aos='fade-up' >
                             <h1 className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 font-bold'>{data.title}</h1>
                             <p className='text-gray-500 text-sm'>{data.description}</p>
                         </div>

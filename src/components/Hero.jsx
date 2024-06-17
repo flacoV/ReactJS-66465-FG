@@ -64,7 +64,7 @@ const Hero = () => {
     <div className='pt-8 dark:bg-gray-900'>
         <div className='container'>
         <div className='flex flex-col justify-center items-center p-10'> 
-            <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span className="select-none text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Buy quicker,</span> buy smarter.</h1>
+            <h1 data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="500" className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span className="select-none text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Buy quicker,</span> buy smarter.</h1>
             <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Tech Store were gaming comes true.</p>
         </div>
         <div className='overflow-hidden rounded-3xl min-h-[550px] 
@@ -80,11 +80,11 @@ const Hero = () => {
                         <div className='flex flex-col justify-center gap-4 sm:pl-3 pt-12 sm:pt-0 
                         text-center sm:text-left order-2 sm:order-1
                         relative z-10 '>
-                            <h1 className='text-2xl sm:text-6xl lg:text-2xl font-bold'>{data.subtitle}</h1>
-                            <h2 className='text-5xl sm:text-6xl lg:text-7xl font-bold'>{data.title}</h2>
-                            <h2 className='text-5xl uppercase text-white dark:text-white/5
+                            <h1 data-aos='zoom-out' data-aos-duration='500' data-aos-once='true' className='text-2xl sm:text-6xl lg:text-2xl font-bold'>{data.subtitle}</h1>
+                            <h2 data-aos='zoom-out' data-aos-duration='500' data-aos-once='true' className='text-5xl sm:text-6xl lg:text-7xl font-bold'>{data.title}</h2>
+                            <h2 data-aos='zoom-out' data-aos-duration='500' data-aos-once='true' className='text-5xl uppercase text-white dark:text-white/5
                             sm:text-[80px] md;text-[100px] xl:text-[150px] font-bold'>{data.title2}</h2>
-                            <div>
+                            <div data-aos='fade-up' data-aos-offset='0' data-aos-duration='500' data-aos-delay='300'>
                                 <Button text='Shop Now' 
                                 bgColor='bg-primary' 
                                 textcolor='text-white' 
@@ -93,7 +93,11 @@ const Hero = () => {
                         </div>
                      {/* Seccion de la imagen */}
                      <div className='order-1 sm:order-2'>
-                        <div>
+                        <div
+                        data-aos='zoom-in'
+                        data-aos-once='true'
+                        className='relative z-10'
+                        >
                             <img src={data.img} alt="" className='w-[300px] h-[300px] sm:h-[450px] sm:scale-105 lg:scale-110 
                             object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] relative z-40' />
                         </div>

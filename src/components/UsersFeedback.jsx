@@ -52,7 +52,7 @@ const UsersFeedback = () => {
     <div>
       <div className="container">
         {/* Header Section */}
-        <div className='flex flex-col justify-center items-center'>
+        <div data-aos="fade-zoom-out" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className='flex flex-col justify-center items-center'>
           <h1 className='max-w-screen-sm text-center mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl'>
             +120k Customers gave their  
             <span className='pl-3 select-none text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400'>
@@ -64,7 +64,7 @@ const UsersFeedback = () => {
 
         {/* Body Section */}
         <section className="py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div data-aos='fade-down' data-aos-delay='200' className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="swiper mySwiper">
               <div className="swiper-wrapper w-max">
                 <div className="swiper-slide">

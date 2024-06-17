@@ -10,17 +10,20 @@ const NewsData = [
         subtitle:'In the last VR Quest update the company announce what we call the future, all handle assisted by AI and more ',
         published: '12 June 2024',
         image: Img1,
+        aosDelay: '0',
     },
     {
         title: 'How to create your ideal setup',
         subtitle:'The prestigious company NVIDIA talks a little more on how to choose all your gamings parts for you to create your ideal set up',
         published: '13 June 2024',
         image: Img2,
+        aosDelay: '200',
     },{
         title: 'How to choose your smartwatch',
         subtitle:'Explore the functions and comforts of each smartwatch so you can choose the best one that suits you.',
         published: '15 June 2024',
         image: Img3,
+        aosDelay: '400',
     }
 ]
 
@@ -37,7 +40,7 @@ const News = () => {
                 {/*Cards Section */}
                 {
                     NewsData.map((data) => (
-                        <div>
+                        <div data-aos="fade-up" data-aos-delay={data.aosDelay} key={data.id} className='group'>
                             {/* Image Section */}
                             <div className='overflow-hidden rounded-2xl mb-2'>
                                 <img src={data.image} alt=""
