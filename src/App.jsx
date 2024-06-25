@@ -19,6 +19,7 @@ import Partners from './components/Partners'
 import Footer from './components/Footer'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { db } from './firebase/firebaseConfig.js'
 
 
 const BannerData = {
@@ -76,8 +77,8 @@ const App = () => {
             </>
           }/>
           <Route path='/shop' className='dark:bg-gray-900' element={<Shop />} />
-          <Route path='/shop/brand/:brand' element={<Shop />} />        
-          <Route path='/shop/product/:id' element={<ItemDetails />} />
+          <Route path='/shop/category/:category' element={<Shop />} />        
+          <Route path='/shop/product/:name' element={<ItemDetails />} />
           </Routes>
         <ItemDetails />
         <Footer />

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowLeft } from "react-icons/fa";
 
-const SearchBar = ({ searchTerm, setSearchTerm, handleSearch, brands, brand, setBrand, onBrandClick }) => {
+const SearchBar = ({ searchTerm, setSearchTerm, handleSearch, categories, category, setCategory, onCategoryClick }) => {
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
   };
@@ -17,9 +17,9 @@ const SearchBar = ({ searchTerm, setSearchTerm, handleSearch, brands, brand, set
       <div className='flex flex-row justify-center p-8 m-5 space-y-6 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-200 dark:bg-gray-800 dark:text-white'>
         <div className="flex flex-col justify-center">
           <div className="flex items-center bg-gray-100 p-4 space-x-4 rounded-lg">
-            <a className='font-bold text-gray-500' href="/shop">
+            <Link className='font-bold text-gray-500' to="/shop">
               <FaArrowLeft />
-            </a>
+            </Link>
             <input
               className="bg-gray-100 outline-none text-gray-500 flex-grow"
               type="text"
@@ -29,15 +29,14 @@ const SearchBar = ({ searchTerm, setSearchTerm, handleSearch, brands, brand, set
             />
           </div>
           <div className="flex flex-wrap gap-2 mt-2 justify-center">
-            {brands.map((br, index) => (
-              <Link
+            {categories.map((cat, index) => (
+              <button
                 key={index}
-                to={`/shop/brand/${br}`}
-                className={`px-4 py-2 rounded-lg ${brand === br ? 'bg-gray-500 text-white' : 'bg-gray-200 text-gray-800'}`}
-                onClick={() => onBrandClick(br)}
+                className={`px-4 py-2 rounded-lg ${category === cat ? 'bg-gray-500 text-white' : 'bg-gray-200 text-gray-800'}`}
+                onClick={() => onCategoryClick(cat)}
               >
-                {br}
-              </Link>
+                {cat}
+              </button>
             ))}
           </div>
         </div>
@@ -47,4 +46,3 @@ const SearchBar = ({ searchTerm, setSearchTerm, handleSearch, brands, brand, set
 };
 
 export default SearchBar;
-
