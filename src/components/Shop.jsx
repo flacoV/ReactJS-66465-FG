@@ -90,13 +90,13 @@ const Shop = () => {
             onCategoryClick={handleCategoryClick}
           />
         </div>
-        <div className='container products flex justify-center items-center flex-wrap gap-9'>
-          {loading ? (
-            <Loader />
-          ) : error ? (
-            <div>Error loading products.</div>
-          ) : (
-            filteredProducts.map((product) => (
+        {loading ? (
+          <Loader />
+        ) : error ? (
+          <div>Error loading products.</div>
+        ) : (
+          <div className='container products flex justify-center items-center flex-wrap gap-9'>
+            {filteredProducts.map((product) => (
               <div key={product.id}>
                 <div className="card bg-white rounded-xl shadow-lg hover:shadow-xl dark:bg-gray-800">
                   <div className="card-border-top"></div>
@@ -107,7 +107,7 @@ const Shop = () => {
                   <p className="job font-bold text-gray-500">{product.category}</p>
                   <div className='w-400 flex justify-center p-6'>
                     <Link
-                      to={`/shop/product/${product.name.replace(/\/$/, '-').toLowerCase()}`}
+                      to={`/shop/product/${product.name.replace(/\s+/g, '-').toLowerCase()}`}
                       className='inline-block rounded-xl px-6 pb-2 pt-2.5 p-6 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out bg-gradient-to-r to-emerald-600 from-sky-400'
                     >
                       Details
@@ -115,9 +115,9 @@ const Shop = () => {
                   </div>
                 </div>
               </div>
-            ))
-          )}
-        </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

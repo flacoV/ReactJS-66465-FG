@@ -3,6 +3,10 @@ import { useParams } from 'react-router-dom';
 import Loader from './shared/Loader';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase/firebaseConfig.js';
+import { FaStar, FaStarHalfAlt, FaFacebookF, FaTwitter } from "react-icons/fa";
+import { BiSolidMessageRounded } from "react-icons/bi";
+
+
 
 const ItemDetails = () => {
   const { name } = useParams(); // Obtén el nombre del producto desde la URL
@@ -25,14 +29,13 @@ const ItemDetails = () => {
 
         if (foundProduct) {
           setProduct(foundProduct);
-          setError(null);
+          setError(false);
         } else {
           setError('Product not found');
         }
         setLoading(false);
       } catch (err) {
-        console.error('Error fetching product:', err);
-        setError('Error loading product details.');
+        console.log('Error fetching product:', err);
         setLoading(false);
       }
     };
@@ -41,26 +44,36 @@ const ItemDetails = () => {
   }, [name]);
 
   return (
-    <div className='pt-8 dark:bg-gray-900'>
-      <div className='container flex justify-center'>
-        <div>
-          {loading ? (
-            <Loader />
-          ) : error ? (
-            <div>{error}</div>
-          ) : product ? (
-            <div className='min-h-[450px] sm:min-h-[550px] min-w-[550px] sm:min-w-[650px]' key={product.id}>
-              <div className='bg-secondary'>
-                <h1>{product.name}</h1>
-                <p>Description: {product.description}</p>
-                <p>Category: {product.category}</p>
+    <div className='px-5 py-24 dark:bg-gray-900'>
+      <div className='container mx-auto shadow-lg'>
+        {loading ? (
+          <Loader />
+        ) : error ? (
+          <div>{error}</div>
+        ) : product ? (
+          <div className='lg:w-4/5 mx-auto flex flex-wrap' key={product.id}>
+              <img className='lg:w-1/2 w-full object-cover object-center rounded-x ' src={product.image} alt={product.name} />
+            <div className='lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0'>
+              <h2 className='text-sm title-font text-gray-500 tracking-widest'>TECH STORE</h2>
+              <h1 className='text-gray-900 text-3xl title-font font-medium mb-1 dark:text-white'>{product.name}</h1>
+              <div className='flex mb-4 items-center'>
+                <span className='flex items-center'>
+                  <FaStar className='w-4 h-4 text-red-400' />
+                  <FaStar className='w-4 h-4 text-red-400' />
+                  <FaStar className='w-4 h-4 text-red-400' />
+                  <FaStar className='w-4 h-4 text-red-400' />
+                  <FaStarHalfAlt className='w-4 h-4 text-red-400' />
+                  <span className='text-gray-500 dark:text-gray-300 ml-3'>+277 Reviews</span>
+                </span>
+                <FaFacebookF className='ml-2 text-gray-400' />
+                <FaTwitter className='ml-2 text-gray-400' />
+                <BiSolidMessageRounded className='ml-2 text-gray-400' />
               </div>
-              <div>
-                <img src={product.image} alt={product.name} />
-              </div>
+              <p className='dark:text-gray-600 leading-relaxed'><span className='text-black dark:text-white/50'>Description:</span> {product.description}</p>
+              <p className='dark:text-gray-600'><span className='text-black dark:text-white/50'>Category:</span> {product.category}</p>
             </div>
-          ) : null}
-        </div>
+          </div>
+        ) : null}
       </div>
     </div>
   );
