@@ -10,8 +10,6 @@ import ItemListContainer from './components/ItemListContainer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Shop from './components/Shop'
 import ItemDetails from './components/ItemDetails'
-import Cart from './components/cart/Cart'
-import CartItems from './components/cart/CartItem'
 import UsersFeedback from './components/UsersFeedback'
 import Watch5 from '../public/assets/products/product5.png'
 import News from './components/News'
@@ -20,6 +18,8 @@ import Footer from './components/Footer'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { db } from './firebase/firebaseConfig.js'
+import Cart from './components/cart/Cart.jsx'
+import { CartProvider } from './components/cart/CartContext';
 
 
 const BannerData = {
@@ -61,6 +61,7 @@ const App = () => {
   return (
     <div className=' bg-white dark:bg-gray-900 
     dark:text-white duration-200'>
+      <CartProvider>
    <BrowserRouter>
         <Navbar />
         <Routes>
@@ -79,10 +80,11 @@ const App = () => {
           <Route path='/shop' className='dark:bg-gray-900' element={<Shop />} />
           <Route path='/shop/category/:category' element={<Shop />} />        
           <Route path='/shop/product/:name' element={<ItemDetails />} />
+          <Route path='/cart' element={<Cart />} />
           </Routes>
-        <ItemDetails />
         <Footer />
       </BrowserRouter>
+      </CartProvider>
     </div>
   )
 }

@@ -1,18 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import Loader from './shared/Loader';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase/firebaseConfig.js';
 import { FaStar, FaStarHalfAlt, FaFacebookF, FaTwitter } from "react-icons/fa";
 import { BiSolidMessageRounded } from "react-icons/bi";
+import { CartContext } from './cart/CartContext';
 
 
 
 const ItemDetails = () => {
-  const { name } = useParams(); // Obtén el nombre del producto desde la URL
+  const { name } = useParams(); 
   const [product, setProduct] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -69,8 +71,18 @@ const ItemDetails = () => {
                 <FaTwitter className='ml-2 text-gray-400' />
                 <BiSolidMessageRounded className='ml-2 text-gray-400' />
               </div>
-              <p className='dark:text-gray-600 leading-relaxed'><span className='text-black dark:text-white/50'>Description:</span> {product.description}</p>
-              <p className='dark:text-gray-600'><span className='text-black dark:text-white/50'>Category:</span> {product.category}</p>
+              <p className='text-gray-600 leading-relaxed'><span className='text-black dark:text-white/50'>Description:</span> {product.description}</p>
+              <p className='text-gray-600 py-5'><span className='text-black dark:text-white/50'>Category:</span> {product.category}</p>
+              <p className='text-gray-600'><span className='text-black dark:text-white/50'>Stock:</span> {product.stock}</p>
+              <hr className='my-4 border-gray-300' />
+              <div className='flex'>
+                <span className='title-font font-medium text-2xl text-gray-900'>${product.price}</span>
+                <button className='flex ml-auto text-white bg-gradient-to-r to-emerald-600 from-sky-400 border-0 py-2 px-6 focus:outline-none rounded-xl'
+                onClick={() => addToCart(product)}
+                >
+                  Add to cart
+                </button>
+              </div>
             </div>
           </div>
         ) : null}

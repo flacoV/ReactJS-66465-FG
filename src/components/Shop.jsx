@@ -29,7 +29,7 @@ const Shop = () => {
         setProducts(productsData);
         setFilteredProducts(productsData);
 
-        // Extract unique categories from products
+
         const uniqueCategories = [...new Set(productsData.map(product => product.category))];
         setCategories(uniqueCategories);
 

@@ -2,12 +2,15 @@ import React, { useState } from 'react'
 import { IoMdSearch } from "react-icons/io"
 import { FaCartShopping } from "react-icons/fa6"
 import { IoIosArrowDropdownCircle } from "react-icons/io";
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import { FaUserCircle } from "react-icons/fa";
 import { HiTrendingUp } from "react-icons/hi";
 import { BsFire } from "react-icons/bs";
 import { IoStar } from "react-icons/io5";
 import DarkMode from './DarkMode'
 import Cart from './cart/Cart';
+
+
 
 
 const dropDownLinks = [
@@ -84,9 +87,9 @@ const Navbar = ({ openCart, cartItemsLength }) => {
                         <div className='relative group hidden sm:block'>
                         <FaUserCircle className='cursor-pointer' />
                         </div>
-                        <button onClick={handleOpenCart} className='relative p-3'>
+                        <Link to='/cart' className='relative p-3'>
                             <FaCartShopping className='text-xl text-grey-600 dark:text-grey-400' />
-                        </button>
+                        </Link>
                         {cartItemsLength > 0 && 
                             <span className='w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs'>{cartItemsLength}</span>
                         }
